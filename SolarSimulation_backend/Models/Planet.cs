@@ -23,12 +23,8 @@ namespace SolarSimulation_backend.Models
         [Required]
         public double Mass { get; set; }
         [Required]
-        public int Radius { get; set; }
+        public double Radius { get; set; }
         [Required]
         public string Color { get; set; }
-        [Required]
-        public double Ax { get; set; }
-        [Required]
-        public double Ay { get; set; }
     }
 }
