@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using SolarSimulation_backend.Models;
 
 namespace SolarSimulation_backend.Services.IServices
 {
-    public interface IPlanetService
+    public interface IBaseService<T> where T : class
     {
-        Task<List<Planet>> GetAll();
+        Task<List<T>> GetAll();
     }
 }
